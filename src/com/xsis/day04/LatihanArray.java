@@ -6,23 +6,24 @@ public class LatihanArray {
 
         LatihanArray logic = new LatihanArray();
 
-        logic.kotak(arr)
+        logic.kotak(arr);
     }
-    void kotak (int [] arr){
+    void kotak (int [][] arr){
         int a = 0;
         for (int i = 0; i<5; i++){
             for (int j= 0; j<5; j++){
                 if (i==j) {
-                    System.out.println("%d",a);
+                    System.out.printf("%d ",a);
                     a++;
                 }
                 else if (i<j){
-                    System.out.println("*");
+                    System.out.printf("* ");
                 }
                 else if (i>j){
-                    System.out.println("0");
+                    System.out.printf("0 ");
                 }
             }
+            System.out.println();
         }
     }
 }
